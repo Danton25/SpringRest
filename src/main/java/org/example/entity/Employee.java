@@ -8,6 +8,10 @@ public class Employee {
     private String email;
     private int salary;
 
+    public Employee(){
+        this.id = UUID.randomUUID().toString();
+    }
+
     public Employee(String name, String email, int salary) {
 
         this.id = UUID.randomUUID().toString();
@@ -15,6 +19,8 @@ public class Employee {
         this.email = email;
         this.salary = salary;
     }
+
+
 
     public String getId() {
         return id;
